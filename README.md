@@ -1,8 +1,9 @@
 # 🚀 GitHub Repository Health Analyzer
+> A DevOps-focused tool to automate repository health analysis and improve code quality monitoring.
 
 ## 📌 Overview
 
-This project is a **CLI-based tool** that analyzes the health of a GitHub repository by evaluating multiple engineering metrics such as:
+This project is a **DevOps-based tool with both CLI and Web UI (Streamlit)** that analyzes the health of a GitHub repository by evaluating multiple engineering metrics such as:
 
 * Code Quality
 * Security
@@ -21,7 +22,7 @@ It provides a **composite health score** along with a structured report, helping
 * 🌿 Branch health inspection
 * 🧮 Composite health scoring system
 * 📄 Automated report generation
-
+* 🌐 Interactive web UI using Streamlit
 ---
 
 ## ⚙️ How It Works
@@ -102,11 +103,21 @@ python main.py --repo https://github.com/username/repository
 
 ---
 
+
+## ⚡ Quick Start (One-Click Run)
+
+For ease of use, the project includes a shortcut command to launch the application.
+
+### ▶️ Run the application
+
+```bash
+./run.command
+```
 ## 📈 Sample Output
 
-```text
+
 Health Score: 82
-```
+
 
 
 ---
@@ -150,6 +161,17 @@ Generates a summary report containing:
 * Repository name
 * Final health score
 * Metrics breakdown
+
+---
+---
+
+## 🌟 Key Highlights
+
+* Modular architecture for scalability  
+* Automated repository analysis  
+* Real-time scoring system  
+* CLI + Web UI support  
+* Easy to use for both developers and non-technical users  
 
 ---
 
