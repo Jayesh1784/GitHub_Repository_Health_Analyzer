@@ -113,10 +113,11 @@ For ease of use, the project includes a shortcut command to launch the applicati
 ```bash
 ./run.command
 ```
-## 📈 Sample Output
+## 📸 Sample Output
 
+Below is the output of the application showing the repository health score and metrics:
 
-Health Score: 82
+![Git Health Checker Screenshot](sample_output.png)
 
 
 
