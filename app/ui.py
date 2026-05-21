@@ -1,9 +1,14 @@
 import streamlit as st
 import json
 import os
+import sys
 import datetime
 
+# Add project root to path so 'app' package is findable
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 REPORT_PATH = os.path.join(PROJECT_ROOT, "report.json")
 
 st.title("🚀 GitHub Repository Health Analyzer")
@@ -15,7 +20,6 @@ if st.button("Analyze Repository"):
             try:
                 from app.integrations.git_client import GitClient
                 from app.integrations.github_client import GitHubClient
-                from app.analyzers.repo_analyzer import RepoAnalyzer
                 from app.analyzers.code_quality import CodeQualityAnalyzer
                 from app.analyzers.security import SecurityAnalyzer
                 from app.analyzers.branch_health import BranchHealthAnalyzer
@@ -72,7 +76,6 @@ if st.button("Analyze Repository"):
 
                 ReportGenerator().generate(report)
 
-                # ── Display ───────────────────────────────────────────
                 st.success("Analysis Complete ✅")
 
                 col1, col2 = st.columns(2)
