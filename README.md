@@ -64,7 +64,8 @@ GitHub_Repository_Health_Analyzer/
 │   │   ├── repo_analyzer.py
 │   │   ├── code_quality.py
 │   │   ├── security.py
-│   │   ├── branch_health.py│   │   ├── collaboration.py
+│   │   ├── branch_health.py
+│   │   ├── collaboration.py
 │   │   └── devops.py
 │   ├── integrations/
 │   │   ├── git_client.py
@@ -160,4 +161,4 @@ To deploy your own instance:
 
 **Jayesh** — [@Jayesh1784](https://github.com/Jayesh1784)
 
-*Built as a college internship project to demonstrate automated DevOps tooling and repository quality monitoring.*
+*Built as a college project to demonstrate automated DevOps tooling and repository quality monitoring.*
