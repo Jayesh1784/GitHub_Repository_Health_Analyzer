@@ -1,6 +1,5 @@
-GitPython
+gitpython
+streamlit
 requests
-pandas
-pyyaml
-rich
-python-dotenv
+radon
+pylint
